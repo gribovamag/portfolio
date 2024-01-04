@@ -1,65 +1,76 @@
 <!doctype html>
-<!-- Резюме несколько оптимистичное в плане владения html и css, я только учусь :)) -->
+<!-- Это портфолио нужно воспринимать как учебное задание по вёрстке -->
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       Резюме
     </title>
+
     <style>
       body {
         font-family: 'Play', sans-serif;
         font-size: 18px;
+	background-color: grey;
       }
-      h1 {
-        font-family: 'Play', sans-serif;
-        font-size: 48px;
-        line-height: 52px;
-        margin: 40px 0 0 0;
+   
+      .my-section {
+        padding: 0 5px 0 5px
       }
-      h2 {
-        font-family: 'Play', sans-serif;
-        font-size: 30px;
-        line-height: 36px;
-        margin: 0 0 20px 0;
-      }
-      h3 {
-        font-size: 20px;
-        line-height: 24px;
-        margin: 20px 0 10px 0;
-      }
-      .h3text {
-        margin 26px 0 10px 0;
-      }
-      p {
-        margin: 0 0 2px 0;
-      } 
-      .mysection {
-        padding: 0 20px 0 20px
-      }
-      .mycontain {
+
+	
+	@media screen and (min-width: 768px) {
+  		body {
+    			padding: 0 20px 0 20px
+ 	 		}
+		}
+
+      .my-contain {
         max-width: 1100px;
         margin: 0 auto 0 auto;
       }
-      .experiencegrid {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 5fr;
-        gap: 0px 0px;
+
+      .header-row{
+        display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 20px;
       }
-      .intable {
-        margin: 0 0 10px 0;
-        height: auto;
+	@media screen and (max-width: 768px) {
+  	.header-row {
+    		flex-wrap: wrap;
+  		}
+	}
+
+	.logo,
+	.profession {
+		flex-grow: 0;
+		flex-shrink: 0;
+		box-sizing: border-box;
+		padding-right: 20px;
       }
+
+	.logo {
+		flex-basis: 75%;
+		max-width: 75%;
+      }
+	.profession {
+		flex-basis: 25%;
+		max-width: 25%;
+      }
+
+/*	@media screen and (max-width: 768px) {
+  	.logo,
+	.profession {
+    		
+  		}
+	}
       
-      .myphoto {
-        display: block;
-        max-width: 170px;
-        margin: 30px 0 0 0;
-      }
+*/
       .footer {
         height: 150px;
         background-color: white;
@@ -69,17 +80,17 @@
 
   <body>
     
-    <section class="mysection">
-      <div class="mycontain">
-        <div class="experiencegrid">
-          <div class="intable">
-            <img class="myphoto" src="https://sun9-6.userapi.com/impg/KDumX0yYUVOngumY4-n23ku8OnNxOe1lbMTDfA/5-Ww7S8Wtsw.jpg?size=1617x2160&quality=95&sign=cc89260592086c505b7bb8cc1e5dc755&type=album">
+    <section class="my-section">
+      <div class="my-contain">
+        <div class="header-row">
+          <div class="logo">
+		<p class="logo-text">МАРИЯ ГРИБОВА</p>
           </div>
-          <div class="intable">
-            <h1>Мария Грибова</h1>
-            <h2>Редактор и верстальщик</h2>
-            <p>+7 985 020-02-53</p>
-            <p>gribovamag@gmail.com</p>
+          <div class="profession">
+            	<p class="profession-text">разработчик</p>
+		<p class="profession-text">редактор</p>
+		<p class="profession-text">инженер</p>
+		<p class="profession-text">лингвист</p>
             
           </div>
         </div>
@@ -87,85 +98,7 @@
       </div>
     </section>
     
-    <section class="mysection">
-      <div class="mycontain">
-        <h3>Места работы</h3>
-        <div class="experiencegrid">
-          <div class="intable"><p>2022—сейчас</p></div>
-          <div class="intable"><p>НИУ ВШЭ</p>
-            <p>Аннотировала и глоссировала корпус текстов тантынского диалекта даргинского языка</p>
-            <p>Сделала <a href="https://dargwa.ru" target="_blank">сайт на Вебфлоу о даргинских языках</a></p>
-            </div>
-        </div>
-        
-        <div class="experiencegrid">
-          <div class="intable"><p>2017—2022</div>
-          <div class="intable"><p>Филиал АО «ОРКК» — «НИИ КП»</p>
-            <p>Разрабатывала алгоритмы пеленгации</p>
-            </div>
-        </div>
-        
-        <div class="experiencegrid">
-          <div class="intable"><p>2014—2016</p></div>
-          <div class="intable"><p>АО «РИРВ»</p>
-            <p>Разрабатывала алгоритмы пеленгации</p>
-            <p>Написала об этом <a href="https://cyberleninka.ru/article/n/modifikatsiya-metoda-esprit-dlya-obrabotki-dannyh-v-ploskih-fazirovannyh-antennyh-reshetkah" target="_blank">статью</a></p>
-            </div>
-        </div>
-        
-      </div>
-    </section>
     
-    <section class="mysection">
-      <div class="mycontain">
-        <h3>Образование</h3>
-        
-        <div class="experiencegrid">
-          <div class="intable"><p>2023—2024</p></div>
-          <div class="intable"><p>Бюро Горбунова</p>
-            <p>Школа редакторов</p>
-            </div>
-        </div>
-        
-        <div class="experiencegrid">
-          <div class="intable"><p>2021—2023</p></div>
-          <div class="intable"><p>РГГУ</p>
-            <p>«Фундаментальная и компьютерная лингвистика», магистр</p>
-            </div>
-        </div>
-        
-        <div class="experiencegrid">
-          <div class="intable"><p>июль—август 2013</p></div>
-          <div class="intable"><p>Федеральная политехническая школа Лозанны, Швейцария</p>
-            <p>Cтажировалась в Лаборатории обработки сигналов LTS-5</p>
-            </div>
-        </div>
-        
-        <div class="experiencegrid">
-          <div class="intable"><p>2008—2014</p></div>
-          <div class="intable"><p>МГТУ им.&nbsp;Н.&nbsp;Э.&nbsp;Баумана</p>
-            <p>«Автономные информационные и управляющие системы», специалист</p>
-            </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="mysection">
-      <div class="mycontain">
-        <h3>Навыки</h3>
-        <p>Webflow, Photoshop, Figma</p>
-        <p>HTML, CSS</p>
-        <p>Python, Matlab</p>
-        <p>Английский, французский, греческий, грузинский</p>
-      </div>
-    </section>
-    
-    <section class="mysection">
-      <div class="mycontain">
-        <h3 class="h3text">Хобби</h3>
-        <p>Каллиграфия, айкидо, рисование</p>
-      </div>
-    </section>
     
     <section class="footer">
       <div class="mycontain">
