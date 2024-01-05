@@ -1,69 +1,92 @@
 <!doctype html>
 <!-- Это портфолио нужно воспринимать как учебное задание по вёрстке -->
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      Резюме
-    </title>
 
-    <style>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Резюме
+  </title>
+
+  <style>
+    body {
+      font-family: 'Geologica', sans-serif;
+      font-size: 18px;
+      background-color: #f5f5f5;
+    }
+
+    .my-section {
+      padding: 0 5px 0 5px
+    }
+
+    @media screen and (min-width: 768px) {
       body {
-        font-family: 'Play', sans-serif;
-        font-size: 18px;
-	background-color: grey;
+        padding: 0 20px 0 20px
       }
-   
-      .my-section {
-        padding: 0 5px 0 5px
-      }
+    }
 
-	
-	@media screen and (min-width: 768px) {
-  		body {
-    			padding: 0 20px 0 20px
- 	 		}
-		}
+    .my-contain {
+      max-width: 1200px;
+      margin: 0 auto 0 auto;
+    }
 
-      .my-contain {
-        max-width: 1100px;
-        margin: 0 auto 0 auto;
-      }
+    .header-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: top;
+      margin: 0 0 20px 0;
+    }
 
-      .header-row{
-        display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      .header-row {
+        flex-wrap: wrap;
       }
-	@media screen and (max-width: 768px) {
-  	.header-row {
-    		flex-wrap: wrap;
-  		}
-	}
+    }
 
-	.logo,
-	.profession {
-		flex-grow: 0;
-		flex-shrink: 0;
-		box-sizing: border-box;
-		padding-right: 20px;
-      }
+    .logo,
+    .profession {
+      flex-grow: 0;
+      flex-shrink: 0;
+      /*box-sizing: border-box; */
+      padding: 0px;
+      margin: 0px;
+    }
 
-	.logo {
-		flex-basis: 75%;
-		max-width: 75%;
-      }
-	.profession {
-		flex-basis: 25%;
-		max-width: 25%;
-      }
+    .logo {
+      flex-basis: 75%;
+      max-width: 75%;
+      font-size: 72px;
+      font-weight: 500;
+      line-height: 80%;
+      margin: 0px;
+      padding: 0px;
+      background-color: #f5f5f5;
+      vertical-align: top;
+    }
 
-/*	@media screen and (max-width: 768px) {
+    .profession {
+      flex-basis: 25%;
+      max-width: 25%;
+      list-style-type: none;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 300;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li {
+      margin-bottom: 0;
+      white-space: nowrap;
+      background-color: #f5f5f5;
+    }
+
+    /*	@media screen and (max-width: 768px) {
   	.logo,
 	.profession {
     		
@@ -71,39 +94,39 @@
 	}
       
 */
-      .footer {
-        height: 150px;
-        background-color: white;
-      }
-    </style>
-  </head>
+    footer {
+      height: 150px;
+      background-color: white;
+    }
+  </style>
+</head>
 
-  <body>
-    
-    <section class="my-section">
-      <div class="my-contain">
-        <div class="header-row">
-          <div class="logo">
-		<p class="logo-text">МАРИЯ ГРИБОВА</p>
-          </div>
-          <div class="profession">
-            	<p class="profession-text">разработчик</p>
-		<p class="profession-text">редактор</p>
-		<p class="profession-text">инженер</p>
-		<p class="profession-text">лингвист</p>
-            
-          </div>
+<body>
+
+  <header class="my-section">
+    <div class="my-contain">
+      <div class="header-row">
+        <div class="logo">
+          МАРИЯ ГРИБОВА
         </div>
-        
+        <ul class="profession">
+          <li>разработчик</li>
+          <li>редактор</li>
+          <li>инженер</li>
+          <li>лингвист</li>
+        </ul>
       </div>
-    </section>
-    
-    
-    
-    <section class="footer">
-      <div class="mycontain">
-        
-      </div>
-    </section>
-  </body>
+
+    </div>
+  </header>
+
+  <section class="my-contain">
+    <div class="portfolio-grid">
+    </div>
+  </section>
+
+  <footer class="my-contain">
+  </footer>
+</body>
+
 </html>
