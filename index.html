@@ -8,101 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
   <title>
-    Резюме
+    Портфолио
   </title>
-
-  <style>
-    body {
-      font-family: 'Geologica', sans-serif;
-      font-size: 18px;
-      background-color: #f5f5f5;
-    }
-
-    .my-section {
-      padding: 0 5px 0 5px
-    }
-
-    @media screen and (min-width: 768px) {
-      body {
-        padding: 0 20px 0 20px
-      }
-    }
-
-    .my-contain {
-      max-width: 1200px;
-      margin: 0 auto 0 auto;
-    }
-
-    .header-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: top;
-      margin: 0 0 20px 0;
-    }
-
-    @media screen and (max-width: 768px) {
-      .header-row {
-        flex-wrap: wrap;
-      }
-    }
-
-    .logo,
-    .profession {
-      flex-grow: 0;
-      flex-shrink: 0;
-      /*box-sizing: border-box; */
-      padding: 0px;
-      margin: 0px;
-    }
-
-    .logo {
-      flex-basis: 75%;
-      max-width: 75%;
-      font-size: 72px;
-      font-weight: 500;
-      line-height: 80%;
-      margin: 0px;
-      padding: 0px;
-      background-color: #f5f5f5;
-      vertical-align: top;
-    }
-
-    .profession {
-      flex-basis: 25%;
-      max-width: 25%;
-      list-style-type: none;
-      font-size: 14px;
-      line-height: 14px;
-      font-weight: 300;
-      margin: 0px;
-      padding: 0px;
-    }
-
-    li {
-      margin-bottom: 0;
-      white-space: nowrap;
-      background-color: #f5f5f5;
-    }
-
-    /*	@media screen and (max-width: 768px) {
-  	.logo,
-	.profession {
-    		
-  		}
-	}
-      
-*/
-    footer {
-      height: 150px;
-      background-color: white;
-    }
-  </style>
 </head>
 
 <body>
-
   <header class="my-section">
     <div class="my-contain">
       <div class="header-row">
@@ -120,12 +32,53 @@
     </div>
   </header>
 
-  <section class="my-contain">
-    <div class="portfolio-grid">
+  <section class="my-section">
+    <div class="my-contain">
+      <div class="portfolio-grid">
+
+        <div class="project-left-top">
+          <figure class="illustration-1">
+            <figcaption>Мотивирующие плакаты</figcaption>
+            <img src="https://sun9-62.userapi.com/impg/tApZrEi4MC8q0m85AifIMvx-dOIsfsU30v66AQ/WfDpGjmKqxc.jpg?size=2560x2560&quality=95&sign=5a711b64f8f3b6050346885bdfdd14bd&type=album" />
+          </figure>
+        </div>
+
+        <div class="project-right-top">
+          <figure class="illustration-2">
+            <figcaption>Минилекс</figcaption>
+            <img src="https://sun9-5.userapi.com/impg/j2K2axN5-YmrlFautB373Ui0_spWvI_ocjbz_Q/w_9f8085q28.jpg?size=1527x2160&quality=95&sign=c697e673c5724f6a7fd1868c1a95a4b8&type=album" />
+          </figure>
+        </div>
+        <div class="project-left-bottom">
+          <figure class="illustration-3">
+            <img src="https://sun9-66.userapi.com/impg/q35P3ARFzXYdEWpJ2DFdSlA92fTMvMQiUBKS2g/1IToVqNOCJI.jpg?size=1527x2160&quality=95&sign=0bdf8e20cd41d70ee4f50e85fd27e141&type=album" />
+            <figcaption>Плакат для секции</figcaption>
+          </figure>
+          <figure class="illustration-3a">
+            <img src="https://sun9-46.userapi.com/impg/fbAkJ82aPfAmOwSR6qraLRtHrdAiLqxCMkmMSA/gmn5gQEbsbg.jpg?size=1920x922&quality=95&sign=13d189621b9f5fdb7caee7fa2f334962&type=album" />
+            <figcaption>Сайт о даргинских языках</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-right-bottom">
+          <figure class="illustration-4">
+            <img src="https://sun9-38.userapi.com/impg/KLyeqsX5nsPfjuEkTzan2ZiukdO5_SP6C15CkA/Bakj3grJOms.jpg?size=2084x2160&quality=95&sign=59b93e21a0aab4468bba540248065533&type=album" />
+            <figcaption>Рисунки</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer class="my-contain">
+    <div class="my-contain">
+      <div class="header-row">
+        <div class="logo" style="font-size: 36px;">
+          GRIBOVAMAG@GMAIL.COM
+        </div>
+      </div>
+
+    </div>
   </footer>
 </body>
 

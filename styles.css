@@ -1,0 +1,266 @@
+body {
+  font-family: "Geologica", sans-serif;
+  font-size: 18px;
+  background-color: #f5f5f5;
+}
+
+.my-section {
+  padding: 0 5px 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 20px 0 20px;
+  }
+}
+
+.my-contain {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.header-row {
+  display: flex;
+  margin: 0 0 20px 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: top;
+}
+
+@media screen and (max-width: 768px) {
+  .header-row {
+    flex-wrap: wrap;
+  }
+}
+
+.logo,
+.profession {
+  flex-grow: 0;
+  flex-shrink: 0;
+  /*box-sizing: border-box; */
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo {
+  flex-basis: 75%;
+  max-width: 75%;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 80%;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  vertical-align: top;
+}
+
+.profession {
+  flex-basis: 25%;
+  max-width: 25%;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0;
+  white-space: nowrap;
+  background-color: #f5f5f5;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+  }
+}
+
+.project-left-top {
+  display: flex;
+  justify-self: end;
+  margin: 0 10px 10px 0;
+}
+
+.project-right-top {
+  justify-self: start;
+  margin: 0 0 10px 10px;
+  align-self: end;
+  /*background-color: magenta;*/
+}
+
+.project-left-bottom {
+  display: flex;
+  /*justify-self: end;*/
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 10px 10px 0 0;
+  /*background-color: magenta; */
+}
+
+.project-right-bottom {
+  justify-self: start;
+  margin: 10px 0 0 10px;
+  align-self: start;
+  /* background-color: magenta; */
+}
+
+@media screen and (max-width: 768px) {
+  .project-left-top,
+  .project-right-top,
+  .project-left-bottom,
+  .project-right-bottom {
+    margin: 0;
+  }
+}
+
+figcaption {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.illustration-1 {
+  width: 100%;
+  /*background-color: white;*/
+  margin: 0;
+  text-align: end;
+}
+
+.illustration-1 img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.illustration-1 figcaption {
+  display: block;
+  width: 100%;
+  text-align: start;
+  margin: 0 0 3px 0;
+}
+
+.illustration-2 {
+  width: 49%; /* почему когда 50%, верхний блок с профессиями никак не выравнивается по краю картинки минилекса?! */
+  /*background-color: white; */
+  min-width: 237px;
+  margin: 0;
+}
+
+.illustration-2 img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.illustration-2 figcaption {
+  display: block;
+  width: 100%;
+  text-align: end;
+  margin: 0 0 3px 0;
+}
+
+.illustration-3 {
+  width: 49%;
+  /* background-color: white;*/
+  margin: 0 0 20px 0;
+  min-width: 237px;
+}
+
+.illustration-3 img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.illustration-3 figcaption {
+  display: block;
+  width: 100%;
+  text-align: start;
+}
+
+.illustration-3a {
+  width: 100%;
+  min-width: 335px;
+  /* background-color: white;*/
+  margin: 0 0 20px 0;
+}
+
+.illustration-3a img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.illustration-3a figcaption {
+  display: block;
+  width: 100%;
+  text-align: start;
+}
+
+.illustration-4 {
+  width: 100%;
+  /*  background-color: white; */
+  margin: 0;
+}
+
+.illustration-4 img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.illustration-4 figcaption {
+  display: block;
+  width: 100%;
+  text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+  .illustration-1,
+  .illustration-2,
+  .illustration-3,
+  .illustration-3a,
+  .illustration-4 {
+    width: 100%;
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .illustration-3,
+  .illustration-3a,
+  .illustration-4 {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  figcaption {
+    text-align: start;
+  }
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-between;
+}
