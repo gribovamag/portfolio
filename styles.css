@@ -534,10 +534,12 @@ figcaption {
   .illustration-4 {
     flex-direction: column-reverse;
     align-items: flex-start;
-    text-align: start;
   }
 
-  figcaption {
+  .illustration-2 figcaption {
+    text-align: start;
+  }
+  .illustration-4 figcaption {
     text-align: start;
   }
 }
